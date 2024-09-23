@@ -2,7 +2,9 @@
 
 ### Fork of https://github.com/EddyVerbruggen/Custom-URL-scheme
 
-- Fixes issue of `handleOpenURL` not being called in latest versions of iOS.
+### Additional credits:
+- https://github.com/ipunkvizard/cordova-plugin-customurlscheme
+- https://github.com/JyrkiRytkonen/custom-url-scheme
 
 #### launch your app by a link like this: `mycoolapp://`
 

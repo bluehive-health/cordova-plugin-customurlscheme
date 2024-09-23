@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-customurlscheme-patch",
-  "version": "5.0.5",
-  "description": "Launch your app by using this URL:  mycoolapp://, you can add a path and even pass params like this: mycoolerapp://somepath?foo=bar",
+  "name": "cordova-plugin-customurlscheme",
+  "version": "6.0.0",
+  "description": "Launch your app by using this URL: mycoolapp://, you can add a path and even pass params like this: mycoolerapp://somepath?foo=bar",
   "cordova": {
-    "id": "cordova-plugin-customurlscheme-patch",
+    "id": "cordova-plugin-customurlscheme",
     "platforms": [
       "ios",
       "android"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ipunkvizard/cordova-plugin-customurlscheme"
+    "url": "https://github.com/bluehive-health/cordova-plugin-customurlscheme"
   },
   "keywords": [
     "Custom URL Scheme",
@@ -24,16 +24,13 @@
     "cordova-ios",
     "cordova-android"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=3.0.0"
-    }
-  ],
+  "engines": {
+    "cordova": ">=7.0.0"
+  },
   "author": "Eddy Verbruggen <eddyverbruggen@gmail.com> (https://github.com/EddyVerbruggen)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ipunkvizard/cordova-plugin-customurlscheme/issues"
+    "url": "https://github.com/bluehive-health/cordova-plugin-customurlscheme/issues"
   },
-  "homepage": "https://github.com/ipunkvizard/cordova-plugin-customurlscheme#readme"
+  "homepage": "https://github.com/bluehive-health/cordova-plugin-customurlscheme#readme"
 }
