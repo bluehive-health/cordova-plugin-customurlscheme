@@ -41,6 +41,8 @@
         </dict>
       </array>
     </config-file>
+
+    <source-file src="src/ios/LaunchMyApp.m" />
   </platform>
 
   <!-- android -->
