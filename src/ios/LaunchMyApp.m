@@ -10,7 +10,7 @@
 
 - (void)pluginInitialize {
   // Other initialization code
-  [self.commandDelegate registerPlugin:self];
+  // [self.commandDelegate registerPlugin:self];
 }
 
 - (void)openURL:(CDVInvokedUrlCommand*)command {
