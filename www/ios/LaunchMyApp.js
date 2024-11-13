@@ -20,7 +20,7 @@
       waitForAndCallHandlerFunction,
       function (error) {
         // Error callback
-        console.error("Error opening URL: " + url);
+        console.error("Error opening URL: ", error);
       },
       "LaunchMyApp",
       "openURL",
