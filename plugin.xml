@@ -31,6 +31,12 @@
       <clobbers target="window.plugins.launchmyapp" />
     </js-module>
 
+    <config-file target="config.xml" parent="/*">
+      <feature name="LaunchMyApp">
+        <param name="ios-package" value="LaunchMyApp" />
+      </feature>
+    </config-file>
+
     <config-file target="*-Info.plist" parent="CFBundleURLTypes">
       <array>
         <dict>
