@@ -15,13 +15,16 @@
 
 - (void)openURL:(CDVInvokedUrlCommand*)command {
     CDVPluginResult* pluginResult = nil;
-    NSString* url = [command.arguments objectAtIndex:0];
-
-    // Execute the callback function with the result
-    if (url) {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:url];
+    
+    if (command.arguments.count > 0) {
+        NSString* url = [command.arguments objectAtIndex:0];
+        if (url && [NSURL URLWithString:url]) {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:url];
+        } else {
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Invalid URL"];
+        }
     } else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"No arguments provided"];
     }
 
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
